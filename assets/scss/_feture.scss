@@ -1,0 +1,158 @@
+.feture-area {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    @media #{$xs} {
+      padding-top: 80px;
+    }
+    img.section-shave{
+      @media #{$md} {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        transform: rotate(57deg);
+      }
+    }
+    img.section-shave {
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+        width: 88%;
+        transform: rotate(0deg);
+      }
+      .feture-blk {
+        margin-bottom: 30px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0px 11px 40px -31px $box-shadow;
+        border-radius: 3px;
+        background-color: $white;
+        padding-top: 40px;
+        @media #{$laptop} {
+          height: 360px; 
+        }
+        @media #{$md} {
+          margin-bottom: 50px; 
+        }
+        @media #{$xs} {
+          margin-bottom: 50px; 
+          height: 360px; 
+        }
+        .feture-img {
+            background-image: url(../img/img-bac.svg);
+            background-size: 100% 100%;
+            background-position: center;
+            height: 220px;
+            width: 80%;
+            margin: auto;
+            img {
+                height: 180px;
+                position: relative;
+                top: 25px;
+              }
+          }
+          h4 {
+            font-size: 28px;
+            margin-top: 20px;
+            line-height: 40px;
+            padding: 0 25px;
+            @media #{$laptop} {
+              font-size: 22px; 
+              line-height: 22px; 
+            }
+            @media #{$lg} {
+              font-size: 21px;
+              margin-top: 20px;
+              line-height: 26px;
+              padding: 0 25px;
+            }
+            @media #{$xs} {
+              font-size: 21px;
+              line-height: 22px;
+            }
+          }
+        
+      }
+      .feture-btn {
+        margin-top: 50px;
+          a.theme-btn {
+            @media #{$xs} {
+            display: block;
+            margin: 0;
+            margin-top: 10px; 
+            font-size: 18px;
+            }
+        } 
+      } 
+
+
+
+
+  }
+  .feture-area:before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url(../img/round-shave.svg);
+    top: 0;
+    left: 2%;
+    z-index: -1;
+  }
+
+  .feture-area.padding-y {
+    @media #{$md} {
+      padding-top: 80px;
+    }
+}
+// Feture-area css END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

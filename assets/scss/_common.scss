@@ -1,0 +1,268 @@
+/*----------------------------------------*/
+/* 1. Theme default css */ 
+@font-face {
+	font-family: GilroyRagular;
+	src: url(../fonts/webFonts/Gilroy-Regular.ttf);
+  }
+  @font-face {
+	font-family: GilroyMedium;
+	src: url(../fonts/webFonts/Gilroy-Medium.ttf);
+  }
+  @font-face {
+	font-family: GilroyBold;
+	src: url(../fonts/webFonts/Gilroy-Bold.ttf);
+  }
+  
+  
+  
+  
+  body {
+	font-family: $GilroyRagular;
+	font-weight: normal;
+	font-style: normal;
+	color: $body-text-color;
+	font-size: 16px; 
+	@media #{$lg} {
+		font-size: 20px;
+	}
+}
+  
+   
+  button {
+	cursor: pointer; }
+  
+  a:focus,
+  .button:focus {
+	text-decoration: none;
+	outline: none; }
+  
+  a:focus,
+  a:hover {
+	color: inherit;
+	text-decoration: none; }
+  
+  a,
+  button {
+	color: inherit;
+	outline: medium none; }
+  
+  button:focus, input:focus, input:focus, textarea, textarea:focus {
+	outline: 0; }
+  
+  .uppercase {
+	text-transform: uppercase; }
+  
+  .capitalize {
+	text-transform: capitalize; }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-family: $GilroyMedium;
+	font-weight: normal;
+	color: $heading-color;
+	margin-top: 0px; 
+	text-transform: normal; }
+  
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+	color: inherit; }
+  
+  h1 {
+	font-size: 40px;
+	font-weight: 500; }
+  
+  h2 {
+	font-size: 35px; }
+  
+  h3 {
+	font-size: 28px; }
+  
+  h4 {
+	font-size: 22px; }
+  
+  h5 {
+	font-size: 18px; }
+  
+  h6 {
+	font-size: 16px; }
+  
+  ul {
+	margin: 0px;
+	padding: 0px; }
+  
+  li {
+	list-style: none; }
+	.container {
+	  max-width: 1640px;
+  }
+  button{
+	  border: none;
+  }
+
+/* Theme btn */
+	.theme-btn {
+	  display: inline-block;
+	  padding: 0px 40px;
+	  background: $theme-color;
+	  text-align: center;
+	  border-radius: 3px;
+	  color: $white !important;
+	  font-size: 22px;
+	  font-family: $GilroyMedium;
+	  text-transform: uppercase;
+	  height: 70px;
+	  line-height: 70px;
+	  transition: .3s;
+	  @media #{$md} {
+		  padding: 0 27px;
+	  }
+	  @media #{$xs} {
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
+	  }
+  }
+  a.theme-btn.inActive-btn:hover {
+	background-color: $theme-color;
+	color: $white !important;
+	border-color: $theme-color;
+}
+  a.theme-btn.inActive-btn {
+	  border: 1px solid $hr-border-color;
+	  background: none;
+	  color: $black !important;
+	  margin-left: 30px;
+  } 
+
+//   scroll to top
+ 
+a#scrollUp {
+  right: 3%;
+  width: 55px;
+  height: 60px;
+  background: $theme-color;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 12px;
+  border-radius: 10px 10px 0px 0px;
+  color: $white !important;
+  bottom: 0px;
+  @media #{$xs} {
+	right: 5%;
+	width: 50px;
+	height: 40px; 
+	font-size: 40px;
+	padding-top: 5px; 
+	bottom: -2px;
+  }
+}
+.scroolTo-TOP{
+	display: none;
+} 
+
+
+// extraContainer-Padding
+ 
+  .padding-y .container {
+	padding: 0 125px;
+  }
+
+
+// secton-title
+
+.section-title {
+	text-align: center;
+	margin-bottom: 100px;
+	@media #{$xs} {
+        text-align: center;
+        margin-bottom: 50px;
+	}
+  }
+  .section-title h3 {
+	font-size: 36px;
+	font-family: GilroyBold;
+	line-height: 50px;
+	@media #{$lg} {
+        font-size: 30px;
+		font-family: GilroyBold;
+		line-height: 32px;
+	}
+	@media #{$xs} {
+		font-size: 22px; 
+		line-height: 30px;
+	}
+  }
+
+//   carousel-css
+
+.owl-nav .owl-prev {
+	position: absolute;
+	top: 50%;
+	left: -80px;
+	transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	color: #82ca21;
+	box-shadow: 0px 0px 25px -12px #a59797;
+	font-size: 26px;
+	@media #{$laptop} { 
+        left: -60px; 
+	}
+	@media #{$lg} {  
+        left: -60px; 
+	}
+	@media #{$md} {  
+        left: -60px; 
+	}
+	@media #{$xs} {  
+        left: -60px; 
+	}
+  }
+  .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+	right: -130px;
+	transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	background: $white;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	color: $theme-color;
+	box-shadow: 0px 0px 25px -12px $box-shadow-arrow;
+	font-size: 26px;
+	@media #{$laptop} {
+        right: -100px; 
+	}
+	@media #{$lg} {  
+        right: -110px; 
+	}
+	@media #{$md} {  
+        right: -110px; 
+	}
+	@media #{$xs} {  
+        right: -110px; 
+	}
+  }
+  .padding-y .container {
+	@media #{$xs} {
+		padding: 0 15px;
+	}
+}
+
+ 
+
+  /* default-css END ================================== */
